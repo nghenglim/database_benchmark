@@ -13,7 +13,7 @@
     9. 0.157s
     10. 0.155s
 
-- postgresql write (10000 rows):
+- postgresql write (10000 rows): from insert.sql, run 10x time accumulate to 100000 rows
     1. 0.227s
     2. 0.256s
     3. 0.215s
@@ -25,7 +25,8 @@
     9. 0.174
     10. 0.182s
 
-simple query: taking average of multiple time query
+### simple query
+taking average of multiple time query
 
 1. `SELECT * FROM testing LIMIT 1000`
     - mariadb(mysql):0.007s
