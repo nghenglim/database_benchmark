@@ -1,3 +1,6 @@
+## Important Notice
+When using pgadmin, the execution time at status bar is including data transfer time, unfortunately, postgre-9.2_vs_mariadb-10.0.22 is using pgadmin status bar execution time to compare with mysql server execution time which is unfair. I will update the correct benchmark soon.
+
 ## Get Config
 - postgresql: `show all;`
 - mysql: `show variables;`
