@@ -1,16 +1,15 @@
-## Important Notice
-When using pgadmin, the execution time at status bar is including data transfer time, unfortunately, postgre-9.2_vs_mariadb-10.0.22 is using pgadmin status bar execution time to compare with mysql server execution time which is unfair. I will update the correct benchmark soon.
-
-## Get Config
-- postgresql: `show all;`
-- mysql: `show variables;`
+## Advised benchmark procedure
+- Put benchmark environment detail to `{folder}/readme.md`
+- Use docker container to perform benchmark, only 1 container running at 1 time
+- Install anaconda with MySQLdb + psycopg2 package to execute benchmark remotely
 
 ## How to Benchmark
-1. Using similar table structure: located at {db}.sql
-2. Use python script to generate sql insert data
-3. Open sqlyog to benchmark MariaDB(MySQL)
-4. Open pgAdmin to benchmark PostgreSQL
-5. All setting are using default: setting related file can be found at {benchmark_folder}/{db}_config.txt
+1. Use similar table structure: located at {db}.sql
+2. `python word_list_generate.py` to generate new sql insert script
+3. `python benchmark.py` to start benchmark
+  - currently have to manually edit hardcoded value to perform benchmark
 
 ## To Do
-Automate benchmark process with python, however need to make sure the benchmark time is using raw execution time, without the transfer time + python script time.
+- Make python 3 compatible
+- No need to comment & uncomment benchmark.init()
+- pass argv optionally to benchmark mysql/mariadb/postgres 

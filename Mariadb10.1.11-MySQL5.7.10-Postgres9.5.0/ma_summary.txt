@@ -1,0 +1,7 @@
+average write time: 50.02ms/10000rows
+average query time (q1): 3.87ms
+average query time (q2): 4.36ms
+average query time (q3): 5.18ms
+average query time (q4): 261.69ms
+average query time (q5): 741.55ms
+average query time (q6): 639.75ms

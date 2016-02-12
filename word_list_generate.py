@@ -6,7 +6,7 @@ wordlist = []
 for line in f:
     wordlist.append(line.strip())
 
-def generate_sql(table='testing', column=['word_col', 'int_col', 'int_col2'], col_type=['varchar', 'int', 'int'], line_ending="\r\n", rows=2048):
+def generate_sql(table='testing', column=['word_col', 'int_col', 'int_col2'], col_type=['varchar', 'int', 'int'], line_ending="\n", rows=2048):
     line = ""
     line = line + "insert into " + table + " (" + ", ".join(map(str, column)) + ") VALUES "
     for i in range(rows):

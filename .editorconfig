@@ -1,0 +1,14 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+
+[*.md]
+indent_size = 2
+
+[*.sls]
+indent_size = 2
+
+[*.yaml]
+indent_size = 2
