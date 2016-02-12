@@ -13,5 +13,6 @@
 
 ### Details
 - [http://nghenglim.github.io/PostgreSQL-9.5.0-vs-MariaDB-10.1.11-vs-MySQL-5.7.0-year-2016/](http://nghenglim.github.io/PostgreSQL-9.5.0-vs-MariaDB-10.1.11-vs-MySQL-5.7.0-year-2016/)
-- my_*.txt : mariadb benchmark Result
+- ma_*.txt : mariadb benchmark Result
+- my_*.txt : mysql benchmark Result
 - pg_*.txt : postgres benchmark Result
