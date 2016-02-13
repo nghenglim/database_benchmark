@@ -34,3 +34,15 @@ average query time (q3): 4.8ms
 average query time (q4): 250.34ms
 average query time (q5): 5506.49ms
 average query time (q6): 501.29ms
+
+### query read
+```json
+{
+  "q1" : "SELECT * FROM testing LIMIT 1000",
+  "q2" : "SELECT * FROM testing WHERE int_col > 5000 LIMIT 1000",
+  "q3" : "SELECT * FROM testing WHERE int_col + int_col2 > 12345 LIMIT 1000",
+  "q4" : "SELECT COUNT(*) FROM testing WHERE int_col + int_col2 > 12345",
+  "q5" : "SELECT * FROM testing WHERE int_col > 5000 ORDER BY word_col ASC LIMIT 1000",
+  "q6" : "SELECT * FROM testing WHERE word_col LIKE '%lim%' ORDER BY word_col DESC LIMIT 1000"
+}
+```
