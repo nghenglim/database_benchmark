@@ -1,6 +1,6 @@
 from __future__ import division
 import time
-current_milli_time = lambda: int(round(time.time() * 1000))
+current_milli_time = lambda: time.time() * 1000
 import MySQLdb
 import psycopg2
 
@@ -135,7 +135,7 @@ class Benchmark:
             line = line.strip()
             if line != '':
                 total_line = total_line + 1
-                total_time = total_time + int(line)
+                total_time = total_time + float(line)
         avg_time = total_time/total_line
         wf.write('average write time: '+ str(avg_time) + self.time_unit + '/10000rows\n')
         f.close()
@@ -148,7 +148,7 @@ class Benchmark:
                 line = line.strip()
                 if line != '':
                     total_line = total_line + 1
-                    total_time = total_time + int(line)
+                    total_time = total_time + float(line)
             avg_time = total_time/total_line
             wf.write('average query time ('+ key +'): '+ str(avg_time) + self.time_unit + '\n')
             f.close()
