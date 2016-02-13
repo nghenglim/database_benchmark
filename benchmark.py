@@ -177,10 +177,9 @@ if benchmark_db == 'postgres':
     dict_connection['user'] = 'postgres'
     dict_connection['passwd'] = 'postgres'
 
-# benchmark = Benchmark(benchmark_db, dict_connection)
-# #benchmark.init() # comment benchmark.init() to disable initialize database + table
-# benchmark.config()
-# benchmark.write()
-# benchmark.read()
-# benchmark.summary()
-print current_micro_time()
+benchmark = Benchmark(benchmark_db, dict_connection)
+#benchmark.init() # comment benchmark.init() to disable initialize database + table
+benchmark.config()
+benchmark.write()
+benchmark.read()
+benchmark.summary()
