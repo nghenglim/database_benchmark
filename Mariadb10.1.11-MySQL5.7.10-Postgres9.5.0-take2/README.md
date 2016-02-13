@@ -9,31 +9,31 @@
 - postgres:9.5.0
 
 ### Postgres Result
-average write time: 77.2ms/10000rows
-average query time (q1): 3.05ms
-average query time (q2): 3.67ms
-average query time (q3): 3.95ms
-average query time (q4): 159.54ms
-average query time (q5): 223.2ms
-average query time (q6): 188.91ms
+- average write time: 77.2ms/10000rows
+- average query time (q1): 3.05ms
+- average query time (q2): 3.67ms
+- average query time (q3): 3.95ms
+- average query time (q4): 159.54ms
+- average query time (q5): 223.2ms
+- average query time (q6): 188.91ms
 
 ### MySQL Result
-average write time: 58.95ms/10000rows
-average query time (q1): 4.5ms
-average query time (q2): 4.23ms
-average query time (q3): 5.02ms
-average query time (q4): 272.6ms
-average query time (q5): 632.92ms
-average query time (q6): 574.28ms
+- average write time: 58.95ms/10000rows
+- average query time (q1): 4.5ms
+- average query time (q2): 4.23ms
+- average query time (q3): 5.02ms
+- average query time (q4): 272.6ms
+- average query time (q5): 632.92ms
+- average query time (q6): 574.28ms
 
 ### MariaDB Result
-average write time: 49.62ms/10000rows
-average query time (q1): 3.85ms
-average query time (q2): 4.28ms
-average query time (q3): 4.8ms
-average query time (q4): 250.34ms
-average query time (q5): 5506.49ms
-average query time (q6): 501.29ms
+- average write time: 49.62ms/10000rows
+- average query time (q1): 3.85ms
+- average query time (q2): 4.28ms
+- average query time (q3): 4.8ms
+- average query time (q4): 250.34ms
+- average query time (q5): 5506.49ms
+- average query time (q6): 501.29ms
 
 ### query read
 ```json

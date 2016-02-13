@@ -1,6 +1,7 @@
 from __future__ import division
 import time
-current_milli_time = lambda: time.time() * 1000
+from datetime import datetime
+current_micro_time = lambda: datetime.now().microsecond
 import MySQLdb
 import psycopg2
 
@@ -86,9 +87,9 @@ class Benchmark:
         for x in range(0, iter):
             conn = self._connect_db()
             r = conn.cursor()
-            t1 = current_milli_time()
+            t1 = current_micro_time()
             r.execute(query)
-            t2 = current_milli_time()
+            t2 = current_micro_time()
             time_used = t2 - t1
             wf.write(str(time_used) + '\n')
             r.close()
@@ -106,9 +107,9 @@ class Benchmark:
         for x in range(0, iter):
             conn = self._connect_db()
             r = conn.cursor()
-            t1 = current_milli_time()
+            t1 = current_micro_time()
             r.execute(query)
-            t2 = current_milli_time()
+            t2 = current_micro_time()
             time_used = t2 - t1
             wf.write(str(time_used) + '\n')
             r.close()
@@ -176,9 +177,10 @@ if benchmark_db == 'postgres':
     dict_connection['user'] = 'postgres'
     dict_connection['passwd'] = 'postgres'
 
-benchmark = Benchmark(benchmark_db, dict_connection)
-#benchmark.init() # comment benchmark.init() to disable initialize database + table
-benchmark.config()
-benchmark.write()
-benchmark.read()
-benchmark.summary()
+# benchmark = Benchmark(benchmark_db, dict_connection)
+# #benchmark.init() # comment benchmark.init() to disable initialize database + table
+# benchmark.config()
+# benchmark.write()
+# benchmark.read()
+# benchmark.summary()
+print current_micro_time()
