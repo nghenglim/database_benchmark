@@ -21,3 +21,6 @@ This repo structure ultimately still have a lot to be changed, feel free to crit
 - exclude transfer time in benchmark by passing a param: also has to make sure databases raw execute time is measuring in same way internally
 - Script or other methods to make all three database in same/similar config, this should be optional to run.
 - More database to benchmark, preferably nosql database
+- Decouple read query(q1 - q6) to another file, write query and database in pit query should be configurable too
+- In benchmark summary should auto populate query used or query version, script version or commit version
+- Benchmark should summarized all database summary and generate a html result with chart(preferably with JS)
