@@ -25,11 +25,14 @@ This repo structure ultimately still have a lot to be changed, feel free to crit
 - In benchmark summary should auto populate query used or query version, script version or commit version
 - Benchmark should summarized all database summary and generate a html result with chart(preferably with JS)
 
-### Notice
-- Since many people is questioning about the database configuration things
-  - this benchmark is using default configuration that comes with the docker image. The reason of doing so is because time consuming to standardize databases configuration and also default configuration should give a basic idea on how the database performs.
+### FAQ
+- Why using default database configuration / configuration between databases is difference:
+  - This benchmark is using default configuration that comes with the docker image.
+  - Time consuming to standardize databases configuration
+  - Default configuration should give a basic idea on how the database performs.
 - Why missing benchmark on index, included data transfer time for benchmark, etc:
   - Is in the To Do list, however IMHO these are good to have benchmark.
 - Why run in VM which make this benchmark not so reliable:
   - Do not want to spend money to buy a physical server or cloud instances.
-  - Make benchmark decentralized, everyone who had a laptop should be able to do their own benchmark instead of relying on others. A rough idea on how these database performs is very important knowledge for all the developer.
+  - Make benchmark decentralized, everyone who had a laptop should be able to do their own benchmark instead of relying on others.
+  - A rough idea on how these database performs is very important knowledge for all the developer.
