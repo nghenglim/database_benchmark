@@ -1,3 +1,8 @@
+## Introduction
+The intention of this benchmark script is a starting of decentralized database benchmark tool. The script might be not complete in feature but slowly we can enhance it. 
+
+This repo structure ultimately still have a lot to be changed, feel free to criticize in an open opinion way or use it for your own benchmark.
+
 ## Advised benchmark procedure
 - Put benchmark environment detail to `{folder}/readme.md`
 - Use docker container to perform benchmark, only 1 container running at 1 time
@@ -10,6 +15,9 @@
   - currently have to manually edit hardcoded value to perform benchmark
 
 ## To Do
-- Make python 3 compatible
-- No need to comment & uncomment benchmark.init()
+- No need to comment & uncomment benchmark.init(): to detect if exist database don't create or drop and create
 - pass argv optionally to benchmark mysql/mariadb/postgres 
+- Include more features to benchmark: index, joining, disk usage
+- exclude transfer time in benchmark by passing a param: also has to make sure databases raw execute time is measuring in same way internally
+- Script or other methods to make all three database in same/similar config, this should be optional to run.
+- More database to benchmark, preferably nosql database
