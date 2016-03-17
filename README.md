@@ -36,3 +36,6 @@ This repo structure ultimately still have a lot to be changed, feel free to crit
   - Do not want to spend money to buy a physical server or cloud instances.
   - Make benchmark decentralized, everyone who had a laptop should be able to do their own benchmark instead of relying on others.
   - A rough idea on how these database performs is very important knowledge for all the developer.
+
+### License
+This database_benchmark script is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
